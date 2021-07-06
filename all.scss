@@ -1,0 +1,311 @@
+$color-white: white;
+$color-gary: #f8f9fa;
+$color-dark-gary: #6c757d;
+$color-mine-blue: #0e4c63;
+$color-blue: #6a9dac;
+$color-orange: #f8dec4;
+$color-dark-orange: #d5917b;
+$base-font-size: 10px;
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    box-sizing: border-box;
+    line-height: 1.5;
+    letter-spacing: 1.5;
+    font-weight: normal;
+}
+
+.container {
+    max-width: 1140px;
+    padding: 0 15px;
+}
+
+.display-none {
+    display: none;
+}
+
+h1 {
+    font-size: $base-font-size * 4.2;
+}
+
+h2 {
+    font-size: $base-font-size * 2.4;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    transition-duration: 0.3s;
+}
+
+button:hover {
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.dis-flex {
+    display: flex;
+}
+
+.flex-w-wrap {
+    flex-wrap: wrap;
+}
+
+.justify-c-space-b {
+    justify-content: space-between;
+}
+
+.justify-c-center {
+    justify-content: center;
+}
+
+.align-i-center {
+    align-items: center;
+}
+
+.bg-gray {
+    background-color: $color-dark-gary;
+}
+
+.mb-8 {
+    margin-bottom: 8px;
+}
+
+.mb-16 {
+    margin-bottom: 16px;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.container,
+.head-content {
+    margin: 48px auto;
+}
+
+.btn-big {
+    margin: 8px 0;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: $base-font-size * 1.6;
+    color: $color-white;
+}
+
+.btn-blue {
+    background-color: $color-blue;
+
+    &:hover {
+        background-color: $color-mine-blue;
+    }
+}
+
+.btn-orange {
+    background-color: $color-orange;
+
+    &:hover {
+        background-color: $color-dark-orange;
+    }
+}
+
+.nav {
+    padding: 6px 0;
+    color: $color-white;
+    background-color: $color-mine-blue;
+
+    a {
+        color: $color-white;
+    }
+}
+
+.introduction,
+.nav-bar {
+    padding: 0 15px;
+}
+
+.nav-content {
+    margin: 0 auto;
+}
+
+.about {
+    max-width: 630px;
+}
+
+.contact {
+    width: 40%;
+    margin-left: 95px;
+}
+
+.about,
+.contact {
+    padding: 24px 15px;
+}
+
+.icon {
+    margin-right: 8px;
+}
+
+.hamburger-list {
+    margin: 2px 0;
+    padding: 4px 12px;
+    border: solid 1px rgba($color-blue, 0.5);
+    border-radius: 5px;
+    font-size: $base-font-size * 2;
+    color: $color-blue;
+
+    &:hover {
+        border-color: rgba($color-orange, 0.5);
+        color: $color-orange;
+    }
+}
+
+
+.nav-logos:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.head-content {
+    max-width: 610px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+}
+
+.head-text {
+    font-size: $base-font-size * 2;
+    font-weight: 100;
+    color: rgba($color-mine-blue, 0.8);
+}
+
+.main-content {
+    padding: 48px 15px 30px;
+
+    li {
+        max-width: 33%;
+    }
+}
+
+.card {
+    border: solid 1px rgba($color-mine-blue, 0.1);
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba($color-mine-blue, 0.1);
+    overflow: hidden;
+
+    
+}
+
+.card-head {
+    position: relative;
+    height: 220px;
+    background-color: $color-mine-blue;
+    overflow: hidden;
+
+    &:hover {
+        .card-img {
+            opacity: 0.8;
+            transform: translateY(5%);
+        }
+        .card-img-text {
+            opacity: 1;
+            transform: scale(1.5);
+        }
+    }
+}
+
+.card-img {
+    position: absolute;
+}
+
+.card-img-text {
+    opacity: 0;
+    color: $color-white;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-footer-text {
+    font-size: $base-font-size * 0.8;
+    color: rgba($color-mine-blue, 0.7);
+}
+
+.card-btns {
+    font-size: 0;
+}
+
+
+.btn-view{
+    border-radius: 5px 0 0 5px;
+}
+
+.btn-edit{
+    border-radius: 0 5px 5px 0;
+}
+
+.btn-view,
+.btn-edit {
+    padding: 5px 8px;
+    border: solid 1px rgba($color-blue, 0.7);
+    font-size: $base-font-size * 1.4;
+    color: $color-blue;
+
+    &:hover {
+        color: $color-white;
+        background-color: $color-blue;
+    }
+}
+
+footer.container {
+    padding-left: 30px;
+    padding-right: 30px;
+
+    a {
+        color: $color-dark-orange;
+    }
+}
+
+.footer-content {
+    margin: 0;
+}
+
+.back-link {
+    float: right;
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .introduction {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .nav-content {
+        margin: 0 auto;
+    }
+
+    .contact {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .main-content {
+        li {
+            max-width: 100%;
+        }
+    }
+}
